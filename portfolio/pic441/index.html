@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <!-- Stylesheets, Metas, Plugins, Etc.-->
+
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <meta name="title" content="PH441">
+  <meta name="description" content="PICTUREHOUSE441 Website">
+  <meta name="keywords" content="movies, cinema, picturehouse, discussion">
+  <meta name="robots" content="noindex, nofollow">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="language" content="English">
+  <meta name="author" content="Anthony DiGrigoli">
+
+  <link rel="shortcut icon" type="image/x-icon" href="images/smalllogo2.jpg" />
+  <link rel="stylesheet" href="plugins/themefisher-font/style.css">
+  <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="plugins/animate/animate.css">
+  <link rel="stylesheet" href="plugins/slick/slick.css">
+  <link rel="stylesheet" href="plugins/slick/slick-theme.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/boxes.css">
+  <link rel="stylesheet" href="https://use.typekit.net/ssr5dhs.css">
+
+
+
+
+
+  <!-- Plugin Scripts
+  <script src="plugins/jquery/dist/jquery.min.js"></script>
+  <script src="plugins/instafeed/instafeed.min.js"></script>
+  <script src="plugins/ekko-lightbox/dist/ekko-lightbox.min.js"></script>
+  <script src="plugins/syo-timer/build/jquery.syotimer.min.js"></script>
+  <script src="plugins/slick/slick.min.js"></script>
+  <script src="plugins/slick/slick-animation.min.js"></script>
+  <script src="js/script.js"></script> -->
+
+
+  <!-- Extra CSS -->
+  <style>
+    .btn-main:hover, .btn-small:hover, .btn-transparent:hover, .btn-solid-border:hover {
+      background: #1F0D40;
+      color: #fff;
+    }
+
+    .btn-solid-border {
+      border: 1px solid #1F0D40;
+      background: #fff;
+      color: #1F0D40;
+    }
+
+    .page-header {
+      background: #1F0D40;
+      margin-top: 20px;
+      border-bottom: none;
+      padding: 30px 0;
+    }
+    .page-header h1 {
+      font-weight: 200;
+      margin: 0 0 6px 0;
+      color: #fdf4eb;
+    }
+    .page-header .breadcrumb {
+      background: transparent;
+      padding: 5px;
+      margin: 0;
+    }
+    .page-header .breadcrumb li {
+      color: #fdf4eb;
+      font-weight: 200;
+      font-size: 12px;
+    }
+    .page-header .breadcrumb li a {
+      color: #ff9900;
+    }
+
+  </style>
+
+
+  <!-- Basic Page Needs
+  ================================================== -->
+  <meta charset="utf-8">
+  <title>PH441 | Home</title>
+
+
+</head>
+
+<body id="body" style="background-color: #fff4e9">
+<script>
+  function successnews() {
+    alert("Thanks for subscribing!");
+  }
+</script>
+<script>
+  function unsub() {
+    alert("Successfully Unsubscribed");
+  }
+</script>
+
+
+<!-- Start Top Header Bar -->
+    <section class="top-header" style="background-color: #fff4e9">
+
+      <div class="container">
+        <div class="row">
+
+          <div class="col-md-2 col-xs-12 col-sm-3">
+            <div class="contact-number">
+              <span style="color: #1F0D40; font-size: 3vh"><a href="contact.jsp">Contact Us</a></span>
+            </div>
+          </div>
+          <div class="col-md-8 col-xs-12 col-sm-6">
+            <!-- Site Logo -->
+            <div class="logo text-center">
+              <a href="index.jsp">
+                <!-- replace logo here -->
+                <img src="images/PH441_Full_Logo_Final.jpeg" width="100%">
+              </a>
+            </div>
+          </div>
+          <div class="col-md-2 col-xs-12 col-sm-3">
+            <!-- cartModel -->
+            <ul class="top-menu text-center list-inline">
+              <li class="dropdown cart-nav dropdown-slide">
+                <a href="checkout.jsp" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" style="color: #1F0D40; font-size: 3vh">Cart</a>
+                <div class="dropdown-menu cart-dropdown" style="text-align: center; align-items: center; justify-content: center">
+                  <a href="checkout.jsp" style="text-align:center; border-color: #1F0D40; .hover{background-color: #1F0D40};" class="btn btn-small btn-solid-border">Checkout</a>
+                  <br>
+                  <br>
+
+                </div>
+
+              </li>
+              <!-- / cartModel -->
+
+            </ul><!-- / .nav .navbar-nav .navbar-right -->
+          </div>
+
+        </div>
+      </div>
+    </section><!-- End Top Header Bar -->
+
+
+    <!-- Main Menu Section -->
+    <section class="menu" style="background-color: #fff4e9">
+      <nav class="navbar navigation">
+        <div class="container">
+          <div class="navbar-header" style="text-align: right; justify-content: right">
+            <h1 class="menu-title" style="color: #1F0D40">Main Menu</h1>
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                    aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar" style="color: #1F0D40"></span>
+              <span class="icon-bar" style="color: #1F0D40"></span>
+              <span class="icon-bar" style="color: #1F0D40"></span>
+            </button>
+
+          </div><!-- / .navbar-header -->
+
+          <!-- Navbar Links -->
+          <div id="navbar" class="navbar-collapse collapse text-center">
+            <ul class="nav navbar-nav">
+
+
+              <!-- Home -->
+              <li class="dropdown ">
+                <a href="index.jsp" style="color: #1F0D40; font-size: 3vh">Home</a>
+              </li>
+              <!-- / Home -->
+
+              <li class="dropdown ">
+                <a href="about.jsp" style="color: #1F0D40; font-size: 3vh">About Us</a>
+              </li>
+
+              <li class="dropdown ">
+                <a href="memberships.jsp" style="color: #1F0D40; font-size: 3vh">Memberships</a>
+              </li>
+
+              <li class="dropdown dropdown-slide">
+                <a style="color: #1F0D40; font-size: 3vh" href="shop.jsp" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="350"
+                   role="button" aria-haspopup="true" aria-expanded="false">Events</a>
+                <ul class="dropdown-menu" style="z-index: 999;">
+                  <li><a href="shop.jsp" style="font-size: 3vh">Events</a></li>
+                  <li><a href="schedule.jsp" style="font-size: 3vh">Calendar</a></li>
+                </ul>
+              </li>
+
+
+              <li class="dropdown dropdown-slide">
+                <a style="color: #1F0D40; font-size: 3vh" href="redeem.jsp" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="350"
+                   role="button" aria-haspopup="true" aria-expanded="false">Redeem</a>
+                <ul class="dropdown-menu" style="z-index: 999;">
+                  <li><a href="redeem.jsp" style="font-size: 3vh">Join an Event</a></li>
+                  <li><a href="questions.jsp" style="font-size: 3vh">Ask A Question</a></li>
+                </ul>
+              </li>
+
+              <li class="dropdown ">
+                <a href="faq.jsp" style="color: #1F0D40; font-size: 3vh">FAQ</a>
+              </li>
+
+              <!-- / Blog -->
+            </ul><!-- / .nav .navbar-nav -->
+
+          </div>
+          <!--/.navbar-collapse -->
+        </div><!-- / .container -->
+      </nav>
+    </section>
+
+    <style>
+      h4{
+        color: #1F0D40;
+      }
+
+      .btn-main{
+        text-align: center; color: #1F0D40; background-color: #fc9160; font-size: 3vh;
+        font-family: "acumin-pro-condensed", sans-serif;
+        font-weight: 600;
+      }
+
+      .btn-main:hover{
+        text-align: center; color: #f6eee3; background-color: #415696; font-size: 3vh;
+        font-family: "acumin-pro-condensed", sans-serif;
+        font-weight: 600;
+
+      }
+    </style>
+
+
+
+    <section style="background-color: #fff4e9">
+      <div class="container-home">
+        <div class="lefthome" style=" background:linear-gradient(0deg, rgba(31, 13, 64, 0.87), rgba(31, 13, 64, 0.87)), url('images/IMG_0163 1.png')
+    no-repeat center / cover;">
+          <div class="content">
+            <h1>You Have The Questions. <br> They Have The Answers.</h1>
+          </div>
+        </div>
+        <div class="right">
+          <p style="color: #1F0D40; text-align: center; font-size: 200%">At Picturehouse 441, we want to connect audiences more closely and personally with the films they love.
+            Through our exclusive live virtual Q&As, film lovers can dig deeper into some of the greatest films of all time with
+            the top filmmakers, actors, and artists who created them.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="products section bg-gray" style="background-color: #fff4e9; border-bottom: 1px solid #dedede;">
+
+      <h1 style="text-align: center" class="testheader">Upcoming Discussions</h1>
+      <h3 style="text-align: center; color: #1F0D40">A taste of what we have in store.</h3>
+      <br>
+
+      <div class="container">
+        <div class="row">
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="product-item">
+              <div class="product-thumb">
+                <img class="img-responsive" src="http://static1.squarespace.com/static/50c10ff1e4b0c562855be559/t/54ff258de4b0a7a5db30d57d/1426007438802/?format=1500w" width="336px" height="500px" alt="product-img"/>
+              </div>
+              <div class="product-content">
+                <h3 style="background-color: #1F0D40; color: #fff1de; padding: 5px">Pete Docter and Jonas Rivera on UP</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="product-item">
+              <div class="product-thumb">
+                <img class="img-responsive" src="https://m.media-amazon.com/images/M/MV5BNWZiYTU5YTEtZDUwYi00ZmZmLWE3YTQtMGIwZWEyOTJkMzM4XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_.jpg" width="336px" height="500px" alt="product-img"/>
+              </div>
+              <div class="product-content">
+                <h3 style="background-color: #1F0D40; color: #fff1de; padding: 5px">Mike Leigh on MEANTIME</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="product-item">
+              <div class="product-thumb">
+                <img class="img-responsive" src="http://cdn.shopify.com/s/files/1/1057/4964/products/The-Last-Picture-Show-Vintage-Movie-Poster-Original-1-Sheet-27x41-2003.jpg?v=1666909224" width="336px" height="500px" alt="product-img"/>
+              </div>
+              <div class="product-content" style="margin-top: -4px">
+                <h3 style="background-color: #1F0D40; color: #fff1de; padding: 5px; text-align: center">Cybill Shepherd on THE LAST PICTURE SHOW</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-2"></div>
+
+          <div class="col-md-4">
+            <div class="product-item">
+              <div class="product-thumb">
+                <img class="img-responsive" src="https://m.media-amazon.com/images/M/MV5BOWRlNGI5NjAtNDFjZi00YTc1LTkxNGQtNzljMDY0OWY1NjRiL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyMjA0MDQ0Mjc@._V1_.jpg" width="336px" height="500px" alt="product-img"/>
+              </div>
+              <div class="product-content">
+                <h3 style="background-color: #1F0D40; color: #fff1de; padding: 5px">Marsha Mason on THE GOODBYE GIRL</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="product-item">
+              <div class="product-thumb">
+                <img class="img-responsive" src="https://m.media-amazon.com/images/M/MV5BM2M1MmVhNDgtNmI0YS00ZDNmLTkyNjctNTJiYTQ2N2NmYzc2XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_.jpg" width="336px" height="500px" alt="product-img"/>
+              </div>
+              <div class="product-content" style="margin-top: -4px">
+                <h3 style="background-color: #1F0D40; color: #fff1de; padding: 5px; text-align: center">Michael Phillips on TAXI DRIVER</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-2"></div>
+
+        </div>
+      </div>
+      <div id="cf-submit" style="align-items: center; justify-content: center; display: flex; width: 100%">
+        <a href="about.jsp" class="btn btn-main mt-20" >Learn More</a>
+      </div>
+
+
+      <section class="call-to-action bg-gray section" style="background-color: #fff4e9; color: #1F0D40; ">
+        <div class="container" style="">
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <div class="col-lg-6 col-md-offset-3">
+                <!--RECOLOR-->  <h1 style="text-align: center; background-color: #1F0D40; color:#fff4e9;">Be the first to hear about even more exclusive events!</h1>
+                <form class="input-group subscription-form" action="subscribe" style="border: #1F0D40 1px solid">
+                  <input type="email" class="form-control" style="font-size: large" placeholder="Enter Your Email Address" name="email" id="email" required>
+                  <span class="input-group-btn">
+				        <button class="btn btn-main" href="index.jsp">Subscribe Now!</button>
+				      </span>
+                </form><!-- /input-group -->
+              </div><!-- /.col-lg-6 -->
+
+            </div>
+          </div> 		<!-- End row -->
+        </div>   	<!-- End container -->
+      </section>
+    </section>
+
+
+
+    <footer class="footer section text-center" id="footer" style="background-color: #1F0D40">
+      <!-- Plugin Scripts -->
+      <script src="plugins/jquery/dist/jquery.min.js"></script>
+      <script src="plugins/instafeed/instafeed.min.js"></script>
+      <script src="plugins/ekko-lightbox/dist/ekko-lightbox.min.js"></script>
+      <script src="plugins/syo-timer/build/jquery.syotimer.min.js"></script>
+      <script src="plugins/slick/slick.min.js"></script>
+      <script src="plugins/slick/slick-animation.min.js"></script>
+      <script src="plugins/bootstrap-touchspin/dist/jquery.bootstrap-touchspin.min.js"></script>
+
+      <script src="js/script.js"></script>
+
+      <div class="container" style="width: 100%">
+        <div class="row" style="width: 100%">
+          <div class="col-md-4" style="justify-content: left; text-align: left; display: flex;">
+            <ul class="social-media">
+              <li>
+                <a href="https://www.facebook.com/profile.php?id=100085113892453">
+                  <i class="tf-ion-social-facebook" style="color: #FFF1DEFF"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/picturehouse441/">
+                  <i class="tf-ion-social-instagram" style="color: #FFF1DEFF"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/picturehouse441">
+                  <i class="tf-ion-social-twitter" style="color: #FFF1DEFF"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <p class="copyright-text" style="color: #FFF1DEFF;">Copyright &copy;2022, Designed &amp; Developed for PICTUREHOUSE441</p>
+          </div>
+          <div class="col-md-4">
+          </div>
+          <div class="col-md-4" style=" justify-content: right; text-align: right;"> <!-- PUT FLEX BACK -->
+            <ul class="footer-menu text-uppercase">
+              <li>
+                <a href="contact.jsp" style="color: #FFF1DEFF">CONTACT</a>
+              </li>
+              <li>
+                <a href="shop.jsp" style="color: #FFF1DEFF">SHOP</a>
+              </li>
+              <li>
+                <a href="privacypolicy.jsp" style="color: #FFF1DEFF">PRIVACY POLICY</a>
+              </li>
+              <li>
+                <a href="faq.jsp" style=" color: #FFF1DEFF">FAQ</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+
+</body>
+</html>

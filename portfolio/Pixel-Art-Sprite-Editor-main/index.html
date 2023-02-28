@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Character Sprite Sheet Editor</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="js/html2canvas.js"></script>
+</head>
+
+<body>
+
+<div class="wrapper">
+    <h1 style="text-align: center">Simple Sprite Maker</h1>
+    <br>
+    <div class="options">
+        <div class="opt-wrapper">
+            <div class="slider">
+                <label for="width-range">Grid Width</label>
+                <input style="accent-color: #0f1a3a" type="range" id="width-range" min="1" max="32">
+                <span id="width-value">00</span>
+            </div>
+            <div class="slider">
+                <label for="height-range">Grid Height</label>
+                <input style="accent-color: #0f1a3a" type="range" id="height-range" min="1" max="32">
+                <span id="height-value">00</span>
+            </div>
+        </div>
+
+        <div class="opt-wrapper">
+            <button id="submit-grid">Create Grid</button>
+            <button id="clear-grid">Clear Grid</button>
+            <input type="color" id="color-input">
+            <button id="erase-btn">Erase</button>
+            <button id="paint-btn">Paint</button>
+            <button id="btn_convert" value="Save Art">Download Sprite</button>
+        </div>
+
+    </div>
+        <div id="the_art" class="container"></div>
+
+    <br>
+    <div id="previewImg"></div>
+</div>
+
+<style>
+    .footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: #4b4b4b;
+        color: white;
+        text-align: center;
+    }
+</style>
+
+<!--<footer class="footer">
+    <br>
+    <p>Anthony DiGrigoli</p>
+    <a href="https://github.com/avdigrigoli" style="color: white">github</a>
+    <a href="files/resume.pdf" style="color: white">resume</a>
+    <br>
+    <br>
+</footer>-->
+
+<script>
+    $(document).ready(function ()
+    {
+        $("#btn_convert").on('click', function ()
+        {
+            html2canvas(document.getElementById("the_art")).then(function (canvas)
+            {
+                var anchorTag = document.createElement("a");
+                document.body.appendChild(anchorTag);
+                //document.getElementById("previewImg").appendChild(canvas);
+                anchorTag.download = "filename.jpg";
+                anchorTag.href = canvas.toDataURL();
+                anchorTag.target = '_blank';
+                anchorTag.click();
+            });
+        });
+    });
+</script>
+
+
+<script src="index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,622 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://fonts.googleapis.com/css?family=Quicksand:400,600,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="fonts/icomoon/style.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Style -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Anthony DiGrigoli</title>
+</head>
+<body style="background-color: black; ">
+
+<div id="blob"></div>
+<div id="blur"></div>
+
+<div class="site-mobile-menu site-navbar-target">
+  <div class="site-mobile-menu-header">
+    <div class="site-mobile-menu-close mt-3">
+      <span class="icon-close2 js-menu-toggle"></span>
+    </div>
+  </div>
+  <div class="site-mobile-menu-body"></div>
+</div> <!-- .site-mobile-menu -->
+
+<div class="site-navbar-wrap">
+  <div class="site-navbar-top">
+    <div class="container py-3">
+      <div class="row align-items-center">
+        <div class="col-6">
+          <div class="d-flex mr-auto">
+            <a href="mailto: avdigrigoli@loyola.edu" class="d-flex align-items-center mr-4">
+              <span class="icon-envelope mr-2"></span>
+              <span class="d-none d-md-inline-block">avdigrigoli@loyola.edu</span>
+            </a>
+          </div>
+        </div>
+        <div class="col-6 text-right">
+          <div class="mr-auto">
+            <a href="https://github.com/avdigrigoli" target="_blank" class="p-2 pl-0"><span class="icon-github"></span></a>
+            <a href="Anthony_DiGrigoli_Resume.pdf" class="p-2 pl-0" target="_blank"><span class="icon-id-card"></span></a>
+            <a href="https://www.linkedin.com/in/anthony-digrigoli/" class="p-2 pl-0" target="_blank"><span class="icon-linkedin"></span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="site-navbar site-navbar-target js-sticky-header" id="navcolor">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-6">
+          <h1 class="my-0 site-logo"><a class="hacked" href="index.html" data-value="ANTHONY DIGRIGOLI">ANTHONY DIGRIGOLI</a></h1>
+        </div>
+        <div class="col-6">
+          <nav class="site-navigation text-right" role="navigation">
+            <div class="container">
+              <div class="d-inline-block d-lg-none ml-md-0 mr-auto py-3"><a href="#" class="site-menu-toggle js-menu-toggle text-white"><span class="icon-menu h3"></span></a></div>
+
+              <ul class="site-menu main-menu js-clone-nav d-none d-lg-block">
+                <li><a href="#home-section" class="nav-link">Home</a></li>
+                <li><a href="#about-section" class="nav-link">About</a></li>
+                <li><a href="#skills-section" class="nav-link">Skills</a></li>
+                <li class="has-children">
+                  <a href="#projects-section" class="nav-link">Projects</a>
+                  <ul class="dropdown arrow-top">
+                    <li><a href="#phoneModal" data-target="#phoneModal" data-toggle="modal" class="nav-link">iPhone Clone</a></li>
+                    <li><a href="#pic441Modal" data-target="#pic441Modal" data-toggle="modal" class="nav-link">Picturehouse441</a></li>
+                    <li><a href="#pixelArtModal" data-target="#pixelArtModal" data-toggle="modal" class="nav-link">Pixel Art Modal</a></li>
+                    <li><a href="#btscModal" data-target="#btscModal" data-toggle="modal" class="nav-link">The BTSC Concept Site</a></li>
+                    <li><a href="#tetrisModal" data-target="#tetris" data-toggle="modal" class="nav-link">Tetris Clone</a></li>
+                  </ul>
+                </li>
+                <li><a href="#contact-section" class="nav-link">Contact</a></li>
+                <li><a onclick="changeColor();" class="p-2 pl-0"><span class="icon-format_color_fill"></span></a></li>
+                <!-- This is the JS to change the color of the light following the mouse.
+                  Need to make it that it will change all the purple the gradients on the site -->
+                <script>
+                  var colors = ["#c96000", "lime", "#0e36d0"];
+                  var colors2 = ["#8a0000", "green", "#7211b2"]
+                  var colorIndex = 0;
+                  function changeColor() {
+                    var col = document.getElementById("blob");
+                    if( colorIndex >= colors.length ) {
+                      colorIndex = 0;
+                    }
+                    col.style.background = '-webkit-linear-gradient('
+                      + colors[colorIndex] + ', ' + colors2[colorIndex] + ')';
+
+                    document.getElementById("navcolor").style.backgroundColor = colors2[colorIndex];
+                    document.getElementById("namelabel").style.background = '-webkit-linear-gradient(45deg, '
+                      + colors[colorIndex] + ', ' + colors2[colorIndex] + ')';
+                    document.getElementById("emaillabel").style.background = '-webkit-linear-gradient(45deg,'
+                      + colors[colorIndex] + ', ' + colors2[colorIndex] + ')';
+                    document.getElementById("msglabel").style.background = '-webkit-linear-gradient(45deg,'
+                      + colors[colorIndex] + ', ' + colors2[colorIndex] + ')';
+                    document.getElementById("sendbutton").style.background = '-webkit-linear-gradient(45deg,'
+                      + colors[colorIndex] + ', ' + colors2[colorIndex] + ')';
+
+                    colorIndex++;
+                  }
+                </script>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section id="home-section">
+<div class="container-fluid" style="z-index: 3; position: relative; padding-top: 200px; padding-bottom: 50px">
+  <div class="container">
+    <div style="color: white; text-align: center">
+      <h1 style="font-weight: bold" id="about-section"> Anthony DiGrigoli - Software Developer </h1>
+    </div>
+  </div>
+</div>
+</section>
+<br>
+<section style="z-index: 3; position: relative;">
+  <div class="container">
+  <div class="row">
+    <div class="col-sm-8" style="color: white">
+      <h2 style="font-weight: bold;">About Me</h2>
+      <h3 style="font-size: 3vmin;">2022 graduate with a bachelor's in Computer Science and minor in Business that offers a strong background in program design, architecture, and development.
+        Driven to be a motivated designer and developer. I have strong problem-solving skills and innovative approaches to challenges.
+        I was sought out to participate in several Full Stack Projects and am equally motivated in both a team and self-directed environment.
+        I excel in various different coding languages, computer systems, and hands on components.</h3>
+      <br>
+      <div class="row" style="text-align: center">
+        <div class="col-6 info-links">
+          <a href="https://github.com/avdigrigoli" target="_blank" type="button">Github</a>
+        </div>
+        <div class="col-6 info-links">
+        <a href="Anthony_DiGrigoli_Resume.pdf" target="_blank" type="button">Open Resume</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4" style="padding-top: 50px">
+      <div class="space">
+        <img src="img/compgif.gif" alt="computer gif">
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+<br>
+<h2 style="font-weight: bold; text-align: center; position: relative; z-index: 2;" id="skills-section">Languages and Skills</h2>
+<p style="text-align: center; position: relative; z-index: 2; padding-bottom: 5vh">Hover and Pull to View</p>
+<br>
+
+<section style="position: relative; z-index: 2; padding-top: 25vh">
+  <div id="image-track" data-mouse-down-at="0" data-prev-percentage="0">
+    <div class="image">
+      <img class="image" src="img/skillbackgrounds/html5bg.jpg" alt="html5" />
+      <div class="image-overlay-text">
+        <img src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_1280.png" alt="html5" draggable="false"/>
+        <h2>HTML 5</h2>
+        <p>Years of Experience: 3</p>
+        <p>Skill Level: <br>⭐⭐⭐⭐⭐</p>
+      </div>
+    </div>
+    <div class="image">
+      <img class="image" src="img/skillbackgrounds/cssbg.jpg" alt="css" />
+      <div class="image-overlay-text">
+        <img src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582747_1280.png" alt="css" draggable="false"/>
+        <h2>CSS</h2>
+        <p>Years of Experience: 3</p>
+        <p>Skill Level: ⭐⭐⭐⭐⭐</p>
+      </div>
+    </div>
+    <div class="image">
+      <img class="image" src="img/skillbackgrounds/javascriptbg.jpg" alt="javascript" />
+      <div class="image-overlay-text">
+        <img src="https://1000logos.net/wp-content/uploads/2020/09/JavaScript-Logo.png" alt="javascript" style="width: 12vmin" draggable="false"/>
+        <h2>Javascript</h2>
+        <p>Years of Experience: 2</p>
+        <p>Skill Level: <br>⭐⭐⭐⭐</p>
+      </div>
+    </div>
+    <div class="image">
+      <img class="image" src="img/skillbackgrounds/javabg.jpg" alt="java" />
+      <div class="image-overlay-text">
+        <img src="https://cdn-icons-png.flaticon.com/512/226/226777.png" alt="java" draggable="false"/>
+        <h2>Java</h2>
+        <p>Years of Experience: 3</p>
+        <p>Skill Level: <br>⭐⭐⭐⭐⭐</p>
+      </div>
+    </div>
+    <div class="image">
+      <img class="image" src="img/skillbackgrounds/cssbg.jpg" alt="python" />
+      <div class="image-overlay-text">
+        <img src="https://letstacle.com/wp-content/uploads/2020/09/python-logo.svg" alt="python" draggable="false"/>
+        <h2>Python</h2>
+        <p>Years of Experience: 2</p>
+        <p>Skill Level: <br>⭐⭐⭐⭐</p>
+      </div>
+    </div>
+    <div class="image">
+      <img class="image" src="img/skillbackgrounds/csharpbg.jpg" alt="csharp" />
+      <div class="image-overlay-text">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Csharp_Logo.png" alt="csharp" draggable="false"/>
+        <h2>C#</h2>
+        <p>Years of Experience: 1</p>
+        <p>Skill Level: <br>⭐⭐⭐⭐</p>
+      </div>
+    </div>
+    <div class="image">
+      <img class="image" src="img/skillbackgrounds/html5bg.jpg" alt="mysql" />
+      <div class="image-overlay-text">
+        <img src="https://www.freepnglogos.com/uploads/logo-mysql-png/logo-mysql-mysql-logo-png-images-are-download-crazypng-21.png" alt="csharp" draggable="false"/>
+        <h2>MySQL</h2>
+        <p>Years of Experience: 1</p>
+        <p>Skill Level: <br>⭐⭐⭐</p>
+      </div>
+    </div>
+    <div class="image">
+      <img class="image" src="img/skillbackgrounds/mariadbbg.jpg" alt="mysql" />
+      <div class="image-overlay-text">
+        <img src="https://www.svgrepo.com/show/373824/mariadb.svg" alt="csharp" draggable="false"/>
+        <h2>MariaDB</h2>
+        <p>Years of Experience: 2</p>
+        <p>Skill Level: <br>⭐⭐⭐⭐</p>
+      </div>
+    </div>
+    <div class="image">
+      <img class="image" src="img/skillbackgrounds/nodejsbg.jpg" alt="mysql" />
+      <div class="image-overlay-text">
+        <img src="https://cdn0.iconfinder.com/data/icons/designer-skills/128/node-js-512.png" alt="csharp" draggable="false"/>
+        <h2>node.js</h2>
+        <p>Years of Experience: 2</p>
+        <p>Skill Level: <br>⭐⭐⭐⭐</p>
+      </div>
+    </div>
+    <div class="image">
+      <img class="image" src="img/skillbackgrounds/cssbg.jpg" alt="mysql" />
+      <div class="image-overlay-text">
+        <img src="https://ionicframework.com/docs/icons/logo-react-icon.png" alt="csharp" draggable="false"/>
+        <h2>React</h2>
+        <p>Years of Experience: 1</p>
+        <p>Skill Level: <br>⭐⭐⭐</p>
+      </div>
+    </div>
+    <div class="image">
+      <img class="image" src="img/skillbackgrounds/iosbg.jpg" alt="mysql" />
+      <div class="image-overlay-text">
+        <img src="https://www.freepnglogos.com/uploads/apple-logo-png/apple-logo-png-dallas-shootings-don-add-are-speech-zones-used-4.png" alt="csharp" draggable="false"/>
+        <h2>IOS App Dev</h2>
+        <p>Years of Experience: 1</p>
+        <p>Skill Level: <br>⭐⭐⭐</p>
+      </div>
+    </div>
+    <div class="image">
+      <img class="image" src="img/skillbackgrounds/nodejsbg.jpg" alt="mysql" />
+      <div class="image-overlay-text">
+        <img src="https://www.un.org/sites/un2.un.org/files/2021/04/android-logo.svg" alt="csharp" draggable="false"/>
+        <h2>Android App Dev</h2>
+        <p>Years of Experience: 1</p>
+        <p>Skill Level: <br>⭐⭐⭐⭐</p>
+      </div>
+    </div>
+    <div class="image">
+      <img class="image" src="img/skillbackgrounds/iosbg.jpg" alt="mysql" />
+      <div class="image-overlay-text">
+        <img src="https://assets.stickpng.com/images/62e131df7fe3599fdd46ecb3.png" alt="csharp" draggable="false"/>
+        <h2>Unity Game Dev</h2>
+        <p>Years of Experience: 2</p>
+        <p>Skill Level: <br>⭐⭐⭐⭐</p>
+      </div>
+    </div>
+    <div class="image">
+      <img class="image" src="img/skillbackgrounds/mariadbbg.jpg" alt="mysql" />
+      <div class="image-overlay-text">
+        <img src="https://swimburger.net/media/ppnn3pcl/azure.png" alt="csharp" draggable="false"/>
+        <h2>Microsoft Azure</h2>
+        <p>Years of Experience: 1</p>
+        <p>Skill Level: <br>⭐⭐⭐</p>
+      </div>
+    </div>
+    <div class="image">
+      <img class="image" src="img/skillbackgrounds/javascriptbg.jpg" alt="mysql" />
+      <div class="image-overlay-text">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Apache_Tomcat_logo.svg/2560px-Apache_Tomcat_logo.svg.png" alt="csharp" style="width: 10vmin" draggable="false"/>
+        <h2>Apache Tomcat</h2>
+        <p>Years of Experience: 2</p>
+        <p>Skill Level: <br>⭐⭐⭐⭐</p>
+      </div>
+    </div>
+    <div class="image">
+      <img class="image" src="img/skillbackgrounds/cssbg.jpg" alt="scrum" />
+      <div class="image-overlay-text">
+        <img src="https://www.scrum.org/themes/custom/scrumorg_v2/assets/images/logo-250.png" alt="csharp" draggable="false"/>
+        <h2>Scrum Agile</h2>
+        <p>Years of Experience: 3</p>
+        <p>Skill Level: <br>⭐⭐⭐⭐⭐</p>
+      </div>
+    </div>
+  </div>
+</section>
+<br>
+<section id="projects-section">
+  <h2 style="font-weight: bold; text-align: center; position: relative; z-index: 2; padding-top: 10vh">Portfolio Highlights</h2>
+  <p style="text-align: center; position: relative; z-index: 2;">Hover and Click for Demo</p>
+  <p style="text-align: center; position: relative; z-index: 2;">More Projects here: <a href="https://github.com/avdigrigoli" target="_blank">
+    <span class="icon-github" style="font-size: 4vmin"></span></a></p>
+  <div class="container" style="">
+    <div class="containermain">
+      <div class="cardmain">
+        <div class="contentmain">
+          <span class="icon-mobile-phone"></span>
+          <h3>iPhone Clone</h3>
+          <p>Languages Used: HTML, CSS, Javascript</p>
+          <a href="#phoneModal" data-target="#phoneModal" data-toggle="modal">Live Demo</a>
+        </div>
+      </div>
+      <div class="cardmain">
+        <div class="contentmain">
+          <span class="icon-film"></span>
+          <h3>Picturehouse 441</h3>
+          <p>Languages Used: Java, HTML, CSS, Javascript</p>
+          <a href="#pic441Modal" data-target="#pic441Modal" data-toggle="modal">Site Demo</a>
+        </div>
+      </div>
+      <div class="cardmain">
+        <div class="contentmain">
+          <span class="icon-paint-brush"></span>
+          <h3>Pixel Art Editor</h3>
+          <p>Languages Used: HTML, CSS, Javascript</p>
+          <a href="#pixelArtModal" data-target="#pixelArtModal" data-toggle="modal">Live Demo</a>
+        </div>
+      </div>
+      <div class="cardmain">
+        <div class="contentmain">
+          <span class="icon-beach_access"></span>
+          <h3>The BTSC Concept Site</h3>
+          <p>Languages Used: Java, HTML, CSS, Javascript</p>
+          <a href="#btscModal" data-target="#btscModal" data-toggle="modal">Site Demo</a>
+        </div>
+      </div>
+      <div class="cardmain">
+        <div class="contentmain">
+          <span class="icon-gamepad"></span>
+          <h3>Tetris Clone</h3>
+          <p>Languages Used: Java (using JavaFX)</p>
+          <a href="#tetrisModal" data-target="#tetrisModal" data-toggle="modal">Game Info</a>
+        </div>
+      </div>
+      <div class="cardmain" style="display: none">
+        <div class="contentmain">
+          <h2>06</h2>
+          <h3>Card Six</h3>
+          <p>ocvn io pinmon o nionononi oni o no in oin on oinonb gtvbj vh j</p>
+          <a href="#">Read More</a>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="js/vanilla-tilt.js"></script>
+    <script>
+      VanillaTilt.init(document.querySelectorAll(".cardmain"),{
+        max: 25,
+        speed: 400
+      })
+    </script>
+  </div>
+
+  <div id="pixelArtModal" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-xl">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" style="color: black; font-weight: bold">Pixel Art Editor</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <iframe src="portfolio/Pixel-Art-Sprite-Editor-main/index.html"></iframe>
+          <p style="text-align: center; color: black; font-weight: bold">This is a compressed version of a pixel art/sprite editor where you can draw,
+            preview, and download your art as an image. I used HTML, CSS, and Javascript to make this program. It was made to help
+          plan and make sprites for games I would make with my friends. <br>Repository Link: <a href="https://github.com/avdigrigoli/Pixel-Art-Sprite-Editor" target="_blank">Here</a></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal" style="background-color: #210052; color: white">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="pic441Modal" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-xl">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" style="color: black; font-weight: bold">Picturehouse441 (Full Stack Development)</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <iframe src="portfolio/pic441/index.html"></iframe>
+          <p style="text-align: center; color: black; font-weight: bold">This is a site that I was the sole developer
+            of from start to finish. I used HTML and CSS for the front end and Java and Javascript for the backend.
+            Most of the functionality was created using Java Servlets and the site was hosted through an Apache Tomcat server.
+            Once the project was completed I licensed it to the company for another developer to maintain it as it was a freelance
+            project. Since then, some CSS changes seem to be made.<br>Repository Link (Original Project): <a href="https://github.com/avdigrigoli/ECommerceSite-Pic441" target="_blank">Here</a> <br>
+          <a href="https://picturehouse441.com/" target="_blank">Live Site</a></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal" style="background-color: #210052; color: white">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="btscModal" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-xl">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" style="color: black; font-weight: bold">The Bridgehampton Tennis and Surf Club Concept Site</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <iframe src="portfolio/TheBTSCWebsite-main/index.html"></iframe>
+          <p style="text-align: center; color: black; font-weight: bold">This is a site that was made as our senior capstone project.
+            You are currently seeing a compressed version. We used HTML and CSS for the front end and Java and Javascript for the backend.
+            Most of the functionality was created using Java Servlets and the site was hosted through an Apache Tomcat server.
+            Once the project was completed we presented it to the club and worked with them moving forward to build a new site.<br>Repository Link (Original Project): <a href="https://github.com/avdigrigoli/TheBTSCWebsite" target="_blank">Here</a></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal" style="background-color: #210052; color: white">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="tetrisModal" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-xl">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" style="color: black; font-weight: bold">Tetris using JavaFX</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <p style="text-align: center; color: black; font-weight: bold">This is a clone of Tetris using Java FX.
+            The jar file is included for you to download and play.<br>Repository Link: <a href="https://github.com/avdigrigoli/Tetris-Clone-JavaFX" target="_blank">Here</a>
+          <br><a href="portfolio/TetrisClone.jar" target="_blank">Game Download</a></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal" style="background-color: #210052; color: white">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="phoneModal" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-xl">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" style="color: black; font-weight: bold">iPhone Clone (With Functional Apps)</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <iframe src="portfolio/phoneclone.html" style="height: 80vh"></iframe>
+
+          <p style="text-align: center; color: black; font-weight: bold">This is a clone of a mobile phone home screen UI.
+            All the apps shown are functional and are more minor coding projects as I felt it was better to
+            have these small projects showcased here as they do not demonstrate as high of a level of coding as
+            other that have been given their own highlight. Click on any of the apps and the bar on the bottom will
+            return you to the home screen if clicked.
+            <br>Repository Link: <a href="https://github.com/avdigrigoli/Tetris-Clone-JavaFX" target="_blank">Here</a>
+            </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal" style="background-color: #210052; color: white">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="position: relative; z-index: 2; padding-top: 5vh" id="contact-section">
+  <h2 style="text-align: center; font-weight: bold">Contact or Inquire</h2>
+  <div class="wrapper">
+    <form action="https://formsubmit.co/91f480bfcebfc41116d01df282b522b0" method="POST">
+      <div class="field">
+        <input type="text" id="name" name="name" placeholder="Your Name Here..."/>
+        <label id="namelabel" for="name" style="font-size: 2.5vmin">Name</label>
+      </div>
+      <div class="field">
+        <input type="text" id="email" name="email" placeholder="Your Email (email@email.com) Here... " />
+        <label id="emaillabel" for="email" style="font-size: 2.5vmin">E-Mail</label>
+      </div>
+      <div class="field">
+        <textarea id="msg" rows="4" name="msg" placeholder="Your message here..."></textarea>
+        <label id="msglabel" for="msg" style="font-size: 2.5vmin">Message</label>
+      </div>
+      <input id="sendbutton" class="button" type="submit" value="Send" style="font-size: 2.5vmin"/>
+    </form>
+
+  </div>
+</section>
+
+
+
+<section style="margin-top: 10vmin;">
+<div class="footer-dark" style="position: relative; z-index: 100;">
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col item social"><a href="https://github.com/avdigrigoli" target="_blank"><i class="icon-github"></i></a>
+          <a href="https://www.linkedin.com/in/anthony-digrigoli/" target="_blank"><i class="icon-linkedin"></i></a>
+          <a href="Anthony_DiGrigoli_Resume.pdf" target="_blank"><i class="icon-id-card"></i></a>
+          <a href="mailto: avdigrigoli@loyola.edu"><i class="icon-envelope"></i></a></div>
+      </div>
+      <p class="copyright">Anthony DiGrigoli</p>
+    </div>
+  </footer>
+</div>
+</section>
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.sticky.js"></script>
+<script src="js/main.js"></script>
+<script>
+
+  /* -- Glow effect -- */
+  const blob = document.getElementById("blob");
+
+  window.onpointermove = event => {
+    const { clientX, clientY } = event;
+
+    blob.animate({
+      left: `${clientX}px`,
+      top: `${clientY + window.scrollY}px`
+    }, { duration: 3000, fill: "forwards" });
+  }
+
+  /* -- Hacked Text Effect --*/
+  const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+  let interval = null;
+
+  document.querySelector(".hacked").onmouseover = event => {
+    let iteration = 0;
+
+    clearInterval(interval);
+
+    interval = setInterval(() => {
+      event.target.innerText = event.target.innerText
+        .split("")
+        .map((letter, index) => {
+          if(index < iteration) {
+            return event.target.dataset.value[index];
+          }
+
+          return letters[Math.floor(Math.random() * 26)]
+        })
+        .join("");
+
+      if(iteration >= event.target.dataset.value.length){
+        clearInterval(interval);
+      }
+
+      iteration += 1 / 3;
+    }, 30);
+  }
+
+  /* -- Image Slider Scroll --*/
+
+  const track = document.getElementById("image-track");
+
+  const handleOnDown = e => track.dataset.mouseDownAt = e.clientX;
+
+  const handleOnUp = () => {
+    track.dataset.mouseDownAt = "0";
+    track.dataset.prevPercentage = track.dataset.percentage;
+  }
+
+  const handleOnMove = e => {
+    if(track.dataset.mouseDownAt === "0") return;
+
+    const mouseDelta = parseFloat(track.dataset.mouseDownAt) - e.clientX,
+      maxDelta = window.innerWidth / 2;
+
+    const percentage = (mouseDelta / maxDelta) * -100,
+      nextPercentageUnconstrained = parseFloat(track.dataset.prevPercentage) + percentage,
+      nextPercentage = Math.max(Math.min(nextPercentageUnconstrained, 0), -100);
+
+    track.dataset.percentage = nextPercentage;
+
+    track.animate({
+      transform: `translate(${nextPercentage}%, -50%)`
+    }, { duration: 1200, fill: "forwards" });
+
+    for(const image of track.getElementsByClassName("image")) {
+      image.animate({
+        objectPosition: `${100 + nextPercentage}% center`
+      }, { duration: 1200, fill: "forwards" });
+    }
+  }
+
+  window.onmousedown = e => handleOnDown(e);
+
+  window.ontouchstart = e => handleOnDown(e.touches[0]);
+
+  window.onmouseup = e => handleOnUp(e);
+
+  window.ontouchend = e => handleOnUp(e.touches[0]);
+
+  window.onmousemove = e => handleOnMove(e);
+
+  window.ontouchmove = e => handleOnMove(e.touches[0]);
+</script>
+</body>
+</html>
